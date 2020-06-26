@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Adi3012Mhjn/nodejs-ngnix-docker#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "*",
     "pm2": "^4.4.0"
   },
   "devDependencies": {
