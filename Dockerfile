@@ -8,8 +8,8 @@ FROM pasientskyhosting/nginx-nodejs
 #ENV $NODE_ENV
 
 # lets install dependencies
-WORKDIR /app
-COPY ./package*.json var/www/html/
+WORKDIR /var/www/html/
+COPY ./package*.json /var/www/html/
 RUN npm install
 RUN npm install express
 COPY . var/www/html/
