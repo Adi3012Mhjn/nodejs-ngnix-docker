@@ -11,6 +11,7 @@ FROM pasientskyhosting/nginx-nodejs
 WORKDIR /app
 COPY ./package*.json ./app
 RUN npm install
+RUN npm install express
 COPY . var/www/html/
 #COPY config/nginx.default.conf var/www/html/
 CMD service nginx start && npm start
