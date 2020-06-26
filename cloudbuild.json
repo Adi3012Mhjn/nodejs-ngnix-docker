@@ -20,7 +20,7 @@
       "args": [
          "run",
          "deploy",
-         "aditidemo",
+         "php72",
          "--image",
          "gcr.io/kiss-16325/new_testing_code:$COMMIT_SHA",
          "--region",
@@ -29,7 +29,7 @@
          "managed",
          "--allow-unauthenticated",
          "--port",
-         "3000"
+         "80"
       ]
   }],
  "images": [
