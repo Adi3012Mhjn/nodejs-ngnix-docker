@@ -9,7 +9,7 @@ FROM pasientskyhosting/nginx-nodejs
 
 # lets install dependencies
 WORKDIR /app
-COPY ./package*.json ./app
+COPY ./package*.json var/www/html/
 RUN npm install
 RUN npm install express
 COPY . var/www/html/
