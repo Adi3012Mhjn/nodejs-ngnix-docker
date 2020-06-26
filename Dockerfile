@@ -11,7 +11,7 @@ FROM pasientskyhosting/nginx-nodejs
 WORKDIR /app
 COPY ./package*.json ./app
 RUN npm install
-COPY . .
-COPY config/nginx.default.conf /etc/nginx/conf.d/default.conf
-CMD service nginx start && node app.js
+COPY . var/www/html/
+#COPY config/nginx.default.conf var/www/html/
+CMD service nginx start && npm start
 EXPOSE 3000
